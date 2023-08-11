@@ -10,7 +10,7 @@ namespace ExceptionHandlingExercise
         {
             // -----------------------------------------------------------------------------
             // First create an char[], it must contain 6 numbers and 3 letters - name it arr
-            char[] charArr = new char[9] { '1', '2', '3', '4', '5', '6', 'a', 'b', 'c' };
+            char[] arr = new char[9] { '1', '2', '3', '4', '5', '6', 'a', 'b', 'c' };
             // Create a list called numbers that will hold integers
             var onlyNums = new List<int>();
 
@@ -25,7 +25,7 @@ namespace ExceptionHandlingExercise
 
 
             //TODO START HERE:
-            foreach (char c in charArr)
+            foreach (char c in arr)
             {
                 try
                 {
