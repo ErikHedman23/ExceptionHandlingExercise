@@ -12,7 +12,7 @@ namespace ExceptionHandlingExercise
             // First create an char[], it must contain 6 numbers and 3 letters - name it arr
             char[] arr = new char[9] { '1', '2', '3', '4', '5', '6', 'a', 'b', 'c' };
             // Create a list called numbers that will hold integers
-            var onlyNums = new List<int>();
+            var numbers = new List<int>();
 
             // Create an string variable with an empty string initializer - name it str
             string str = "";
@@ -31,7 +31,7 @@ namespace ExceptionHandlingExercise
                 {
                     str = c.ToString();
                     var nowInt = int.Parse(str);
-                    onlyNums.Add(nowInt);
+                    numbers.Add(nowInt);
                 }
                 catch
                 {
@@ -56,7 +56,7 @@ namespace ExceptionHandlingExercise
 
 
 
-            foreach (var num in onlyNums)
+            foreach (var num in numbers)
             {
                 Console.WriteLine(num);
             }
