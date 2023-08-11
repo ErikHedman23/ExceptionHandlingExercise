@@ -33,9 +33,13 @@ namespace ExceptionHandlingExercise
                     var nowInt = int.Parse(str);
                     numbers.Add(nowInt);
                 }
-                catch
+                catch (FormatException e)
                 {
                     Console.WriteLine($"Unable to Parse '{c}'");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
                 }
             }
 
